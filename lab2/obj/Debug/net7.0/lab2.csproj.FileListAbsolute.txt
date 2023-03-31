@@ -1,0 +1,15 @@
+C:\c#_labs\lab2\bin\Debug\net7.0\lab2.exe
+C:\c#_labs\lab2\bin\Debug\net7.0\lab2.deps.json
+C:\c#_labs\lab2\bin\Debug\net7.0\lab2.runtimeconfig.json
+C:\c#_labs\lab2\bin\Debug\net7.0\lab2.dll
+C:\c#_labs\lab2\bin\Debug\net7.0\lab2.pdb
+C:\c#_labs\lab2\obj\Debug\net7.0\lab2.csproj.AssemblyReference.cache
+C:\c#_labs\lab2\obj\Debug\net7.0\lab2.GeneratedMSBuildEditorConfig.editorconfig
+C:\c#_labs\lab2\obj\Debug\net7.0\lab2.AssemblyInfoInputs.cache
+C:\c#_labs\lab2\obj\Debug\net7.0\lab2.AssemblyInfo.cs
+C:\c#_labs\lab2\obj\Debug\net7.0\lab2.csproj.CoreCompileInputs.cache
+C:\c#_labs\lab2\obj\Debug\net7.0\lab2.dll
+C:\c#_labs\lab2\obj\Debug\net7.0\refint\lab2.dll
+C:\c#_labs\lab2\obj\Debug\net7.0\lab2.pdb
+C:\c#_labs\lab2\obj\Debug\net7.0\lab2.genruntimeconfig.cache
+C:\c#_labs\lab2\obj\Debug\net7.0\ref\lab2.dll
