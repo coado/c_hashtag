@@ -6,7 +6,8 @@ class Program {
     
     static public void Main() {
         Program program = new Program();
-        program.zad1();
+        // program.zad1();
+        program.zad4();
     }
 
 
@@ -55,4 +56,34 @@ class Program {
         }
         
     }
+
+    public void zad4() {
+
+        List<int> wakeupIds = new List<int>();
+        Random random = new Random(Environment.TickCount);
+        List<SleepyThread> sleepyThreads = new List<SleepyThread>();
+        
+        int n = 10;
+
+        for (int i = 0; i < n; i++) {
+            SleepyThread sleepyThread = new SleepyThread(i, wakeupIds, random.Next(10000));
+            sleepyThread.Thread = new Thread(new ThreadStart(sleepyThread.Start));
+            sleepyThreads.Add(sleepyThread);
+        }
+
+        foreach(SleepyThread thread in sleepyThreads) {
+            thread.Thread.Start();
+        }
+
+        while(wakeupIds.Count != n) {}
+    
+        Console.WriteLine("All threads are up");
+
+        foreach (SleepyThread thread in sleepyThreads) {
+            thread.end = true;
+        }
+
+        Console.WriteLine("Program closed");
+    }
+
 }
