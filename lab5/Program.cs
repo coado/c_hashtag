@@ -6,8 +6,10 @@ class Program {
     
     static public void Main() {
         Program program = new Program();
-        // program.zad1();
-        program.zad4();
+        program.zad1();
+        // program.zad2();
+        // program.zad3();
+        // program.zad4();
     }
 
 
@@ -43,7 +45,7 @@ class Program {
         }
         
         string command = "";
-        while (command != "p") {
+        while (command != "q") {
             command = Console.ReadLine();
         }
 
@@ -55,6 +57,29 @@ class Program {
             consument.end = true;
         }
         
+    }
+
+    public void zad2() {
+        FileWatcher fileWatcher = new FileWatcher("./");
+        fileWatcher.Thread = new Thread(new ThreadStart(fileWatcher.Start));
+        fileWatcher.Thread.Start();
+    }
+
+    public void zad3() {
+        List<string> fileNames = new List<string>();
+
+        SearchFiles searchFiles = new SearchFiles("./", "", fileNames);
+        searchFiles.Thread = new Thread(new ThreadStart(searchFiles.Start));
+        searchFiles.Thread.Start();  
+
+        while (true) {
+            foreach (string fileName in fileNames.ToList()) {
+                Console.WriteLine(fileName);
+            }   
+
+            Thread.Sleep(2000);
+        }
+
     }
 
     public void zad4() {

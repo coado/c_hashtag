@@ -23,8 +23,10 @@ public class SleepyThread {
 
             // wake up after first timeout
             if (!isWakedUp) {
-                Console.WriteLine($"Thread {id} is up");
-                wakeupIds.Add(id);
+                lock (wakeupIds) {
+                    Console.WriteLine($"Thread {id} is up");
+                    wakeupIds.Add(id);
+                }
                 isWakedUp = true;
             }
 
